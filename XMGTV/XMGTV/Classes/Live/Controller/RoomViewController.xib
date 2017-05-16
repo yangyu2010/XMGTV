@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -37,28 +37,28 @@
                             <rect key="frame" x="75" y="0.0" width="75" height="44"/>
                             <state key="normal" image="menu_btn_share"/>
                             <connections>
-                                <action selector="bottomMenuClick:" destination="-1" eventType="touchUpInside" id="fH8-Wp-v4d"/>
+                                <action selector="bottomMenuClick:" destination="-1" eventType="touchUpInside" id="wsn-rK-AiX"/>
                             </connections>
                         </button>
                         <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Cy-Tb-DyF" userLabel="礼物">
                             <rect key="frame" x="150" y="0.0" width="75" height="44"/>
                             <state key="normal" image="room_btn_gift"/>
                             <connections>
-                                <action selector="bottomMenuClick:" destination="-1" eventType="touchUpInside" id="kpe-in-j6i"/>
+                                <action selector="bottomMenuClick:" destination="-1" eventType="touchUpInside" id="a7L-OO-Zgb"/>
                             </connections>
                         </button>
                         <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kyd-Om-uaR" userLabel="更多">
                             <rect key="frame" x="225" y="0.0" width="75" height="44"/>
                             <state key="normal" image="room_btn_more"/>
                             <connections>
-                                <action selector="bottomMenuClick:" destination="-1" eventType="touchUpInside" id="fXW-Yq-4CP"/>
+                                <action selector="bottomMenuClick:" destination="-1" eventType="touchUpInside" id="3lm-MX-DGc"/>
                             </connections>
                         </button>
                         <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgf-MS-M0A" userLabel="星星">
                             <rect key="frame" x="300" y="0.0" width="75" height="44"/>
                             <state key="normal" image="room_btn_qfstar"/>
                             <connections>
-                                <action selector="bottomMenuClick:" destination="-1" eventType="touchUpInside" id="T2j-ID-gUA"/>
+                                <action selector="bottomMenuClick:" destination="-1" eventType="touchUpInside" id="9pX-Hu-wHo"/>
                             </connections>
                         </button>
                     </subviews>
