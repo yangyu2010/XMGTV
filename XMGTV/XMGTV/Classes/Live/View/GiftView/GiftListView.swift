@@ -69,7 +69,9 @@ extension GiftListView {
 // MARK:- 加载数据
 extension GiftListView {
     fileprivate func loadGiftData() {
+        
         giftVM.loadGiftData {
+
             self.pageCollectionView.reloadData()
         }
     }

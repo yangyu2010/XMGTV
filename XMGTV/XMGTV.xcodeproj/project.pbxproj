@@ -57,6 +57,8 @@
 		869591361ECAFA8800B8855D /* EmoticonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869591251ECAFA8800B8855D /* EmoticonViewModel.swift */; };
 		869591371ECAFA8800B8855D /* GiftViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869591261ECAFA8800B8855D /* GiftViewModel.swift */; };
 		869591391ECAFAA100B8855D /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869591381ECAFAA100B8855D /* NibLoadable.swift */; };
+		8695913C1ECAFD2F00B8855D /* QHNormalEmotionSort.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8695913A1ECAFD2F00B8855D /* QHNormalEmotionSort.plist */; };
+		8695913D1ECAFD2F00B8855D /* QHSohuGifSort.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8695913B1ECAFD2F00B8855D /* QHSohuGifSort.plist */; };
 		86E7F14D1EC1B39200249043 /* Emitterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E7F14C1EC1B39200249043 /* Emitterable.swift */; };
 /* End PBXBuildFile section */
 
@@ -112,6 +114,8 @@
 		869591251ECAFA8800B8855D /* EmoticonViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonViewModel.swift; sourceTree = "<group>"; };
 		869591261ECAFA8800B8855D /* GiftViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftViewModel.swift; sourceTree = "<group>"; };
 		869591381ECAFAA100B8855D /* NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		8695913A1ECAFD2F00B8855D /* QHNormalEmotionSort.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = QHNormalEmotionSort.plist; sourceTree = "<group>"; };
+		8695913B1ECAFD2F00B8855D /* QHSohuGifSort.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = QHSohuGifSort.plist; sourceTree = "<group>"; };
 		86E7F14C1EC1B39200249043 /* Emitterable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emitterable.swift; sourceTree = "<group>"; };
 		9F04B7D56BAD3BAEB8F6EBDD /* Pods-XMGTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMGTV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XMGTV/Pods-XMGTV.debug.xcconfig"; sourceTree = "<group>"; };
 		C4EFB323AAEB2F5068874C43 /* Pods-XMGTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMGTV.release.xcconfig"; path = "Pods/Target Support Files/Pods-XMGTV/Pods-XMGTV.release.xcconfig"; sourceTree = "<group>"; };
@@ -306,6 +310,8 @@
 			isa = PBXGroup;
 			children = (
 				18CAC9E31DD2B248006A328E /* types.plist */,
+				8695913A1ECAFD2F00B8855D /* QHNormalEmotionSort.plist */,
+				8695913B1ECAFD2F00B8855D /* QHSohuGifSort.plist */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -521,6 +527,8 @@
 			files = (
 				8695912E1ECAFA8800B8855D /* ChatToolsView.xib in Resources */,
 				869591331ECAFA8800B8855D /* GiftListView.xib in Resources */,
+				8695913C1ECAFD2F00B8855D /* QHNormalEmotionSort.plist in Resources */,
+				8695913D1ECAFD2F00B8855D /* QHSohuGifSort.plist in Resources */,
 				18CAC9C41DD181B7006A328E /* Rank.storyboard in Resources */,
 				869591311ECAFA8800B8855D /* EmoticonViewCell.xib in Resources */,
 				18CAC9AF1DD180B9006A328E /* LaunchScreen.storyboard in Resources */,

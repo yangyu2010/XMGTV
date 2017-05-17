@@ -17,7 +17,7 @@ extension GiftViewModel {
         // http://qf.56.com/pay/v4/giftList.ios?type=0&page=1&rows=150
         
         if giftlistData.count != 0 { finishedCallback() }
-        
+
         NetworkTools.requestData(.get, URLString: "http://qf.56.com/pay/v4/giftList.ios", parameters: ["type" : 0, "page" : 1, "rows" : 150], finishedCallback: { result in
             guard let resultDict = result as? [String : Any] else { return }
             
