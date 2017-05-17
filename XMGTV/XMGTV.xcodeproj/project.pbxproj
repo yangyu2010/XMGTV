@@ -60,6 +60,14 @@
 		8695913C1ECAFD2F00B8855D /* QHNormalEmotionSort.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8695913A1ECAFD2F00B8855D /* QHNormalEmotionSort.plist */; };
 		8695913D1ECAFD2F00B8855D /* QHSohuGifSort.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8695913B1ECAFD2F00B8855D /* QHSohuGifSort.plist */; };
 		86E7F14D1EC1B39200249043 /* Emitterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E7F14C1EC1B39200249043 /* Emitterable.swift */; };
+		86EE51DE1ECC53E800BC4BFF /* Immessage.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EE51D31ECC53E800BC4BFF /* Immessage.proto.swift */; };
+		86EE51E11ECC53E800BC4BFF /* ysocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EE51D71ECC53E800BC4BFF /* ysocket.swift */; };
+		86EE51E21ECC53E800BC4BFF /* ytcpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = 86EE51D81ECC53E800BC4BFF /* ytcpsocket.c */; };
+		86EE51E31ECC53E800BC4BFF /* ytcpsocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EE51D91ECC53E800BC4BFF /* ytcpsocket.swift */; };
+		86EE51E41ECC53E800BC4BFF /* yudpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = 86EE51DA1ECC53E800BC4BFF /* yudpsocket.c */; };
+		86EE51E51ECC53E800BC4BFF /* yudpsocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EE51DB1ECC53E800BC4BFF /* yudpsocket.swift */; };
+		86EE51E61ECC53E800BC4BFF /* YYServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EE51DC1ECC53E800BC4BFF /* YYServer.swift */; };
+		86EE51E71ECC53E800BC4BFF /* YYServerCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EE51DD1ECC53E800BC4BFF /* YYServerCommon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -117,6 +125,14 @@
 		8695913A1ECAFD2F00B8855D /* QHNormalEmotionSort.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = QHNormalEmotionSort.plist; sourceTree = "<group>"; };
 		8695913B1ECAFD2F00B8855D /* QHSohuGifSort.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = QHSohuGifSort.plist; sourceTree = "<group>"; };
 		86E7F14C1EC1B39200249043 /* Emitterable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emitterable.swift; sourceTree = "<group>"; };
+		86EE51D31ECC53E800BC4BFF /* Immessage.proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Immessage.proto.swift; sourceTree = "<group>"; };
+		86EE51D71ECC53E800BC4BFF /* ysocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ysocket.swift; sourceTree = "<group>"; };
+		86EE51D81ECC53E800BC4BFF /* ytcpsocket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ytcpsocket.c; sourceTree = "<group>"; };
+		86EE51D91ECC53E800BC4BFF /* ytcpsocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ytcpsocket.swift; sourceTree = "<group>"; };
+		86EE51DA1ECC53E800BC4BFF /* yudpsocket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yudpsocket.c; sourceTree = "<group>"; };
+		86EE51DB1ECC53E800BC4BFF /* yudpsocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = yudpsocket.swift; sourceTree = "<group>"; };
+		86EE51DC1ECC53E800BC4BFF /* YYServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYServer.swift; sourceTree = "<group>"; };
+		86EE51DD1ECC53E800BC4BFF /* YYServerCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYServerCommon.swift; sourceTree = "<group>"; };
 		9F04B7D56BAD3BAEB8F6EBDD /* Pods-XMGTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMGTV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XMGTV/Pods-XMGTV.debug.xcconfig"; sourceTree = "<group>"; };
 		C4EFB323AAEB2F5068874C43 /* Pods-XMGTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMGTV.release.xcconfig"; path = "Pods/Target Support Files/Pods-XMGTV/Pods-XMGTV.release.xcconfig"; sourceTree = "<group>"; };
 		F5A85314F85036600EA81B3D /* Pods_XMGTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XMGTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -367,6 +383,7 @@
 		8695910F1ECAFA8800B8855D /* Live */ = {
 			isa = PBXGroup;
 			children = (
+				86EE51D21ECC53E800BC4BFF /* Server */,
 				869591101ECAFA8800B8855D /* Controller */,
 				869591131ECAFA8800B8855D /* Model */,
 				869591181ECAFA8800B8855D /* View */,
@@ -443,6 +460,29 @@
 				869591381ECAFAA100B8855D /* NibLoadable.swift */,
 			);
 			path = Protocol;
+			sourceTree = "<group>";
+		};
+		86EE51D21ECC53E800BC4BFF /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				86EE51D41ECC53E800BC4BFF /* ysocket */,
+				86EE51DC1ECC53E800BC4BFF /* YYServer.swift */,
+				86EE51DD1ECC53E800BC4BFF /* YYServerCommon.swift */,
+				86EE51D31ECC53E800BC4BFF /* Immessage.proto.swift */,
+			);
+			path = Server;
+			sourceTree = "<group>";
+		};
+		86EE51D41ECC53E800BC4BFF /* ysocket */ = {
+			isa = PBXGroup;
+			children = (
+				86EE51D71ECC53E800BC4BFF /* ysocket.swift */,
+				86EE51D81ECC53E800BC4BFF /* ytcpsocket.c */,
+				86EE51D91ECC53E800BC4BFF /* ytcpsocket.swift */,
+				86EE51DA1ECC53E800BC4BFF /* yudpsocket.c */,
+				86EE51DB1ECC53E800BC4BFF /* yudpsocket.swift */,
+			);
+			path = ysocket;
 			sourceTree = "<group>";
 		};
 		8E2929569C9931240CCC6B11 /* Pods */ = {
@@ -602,6 +642,8 @@
 				18CACA0C1DD2C402006A328E /* NetworkTools.swift in Sources */,
 				18CAC9CC1DD182E7006A328E /* MainViewController.swift in Sources */,
 				18CAC9DC1DD2AEDD006A328E /* HYTitleStyle.swift in Sources */,
+				86EE51DE1ECC53E800BC4BFF /* Immessage.proto.swift in Sources */,
+				86EE51E21ECC53E800BC4BFF /* ytcpsocket.c in Sources */,
 				8695912B1ECAFA8800B8855D /* GiftModel.swift in Sources */,
 				18CAC9A51DD180B9006A328E /* AppDelegate.swift in Sources */,
 				18CAC9E81DD2B43E006A328E /* AnchorViewController.swift in Sources */,
@@ -609,6 +651,7 @@
 				18CAC9BF1DD1811A006A328E /* UIColor-Extension.swift in Sources */,
 				869591291ECAFA8800B8855D /* Emoticon.swift in Sources */,
 				18CAC9D11DD18750006A328E /* HomeViewController.swift in Sources */,
+				86EE51E31ECC53E800BC4BFF /* ytcpsocket.swift in Sources */,
 				18CAC9DB1DD2AEDD006A328E /* HYPageView.swift in Sources */,
 				18CACA101DD2C754006A328E /* AnchorModel.swift in Sources */,
 				18CAC9EB1DD2B85D006A328E /* WaterfallLayout.swift in Sources */,
@@ -616,8 +659,11 @@
 				869591301ECAFA8800B8855D /* EmoticonViewCell.swift in Sources */,
 				869591321ECAFA8800B8855D /* GiftListView.swift in Sources */,
 				18CAC9E61DD2B2A3006A328E /* HomeType.swift in Sources */,
+				86EE51E11ECC53E800BC4BFF /* ysocket.swift in Sources */,
 				86E7F14D1EC1B39200249043 /* Emitterable.swift in Sources */,
 				188B88261DD31410007871A4 /* XMGNavigationController.swift in Sources */,
+				86EE51E61ECC53E800BC4BFF /* YYServer.swift in Sources */,
+				86EE51E41ECC53E800BC4BFF /* yudpsocket.c in Sources */,
 				8695912D1ECAFA8800B8855D /* ChatToolsView.swift in Sources */,
 				869591371ECAFA8800B8855D /* GiftViewModel.swift in Sources */,
 				869591391ECAFAA100B8855D /* NibLoadable.swift in Sources */,
@@ -630,9 +676,11 @@
 				869591361ECAFA8800B8855D /* EmoticonViewModel.swift in Sources */,
 				18CACA0E1DD2C540006A328E /* HomeViewModel.swift in Sources */,
 				8695910E1ECAFA1400B8855D /* HYPageCollectionViewLayout.swift in Sources */,
+				86EE51E51ECC53E800BC4BFF /* yudpsocket.swift in Sources */,
 				18CAC9E11DD2B025006A328E /* Const.swift in Sources */,
 				18CACA191DD2C964006A328E /* HomeViewCell.swift in Sources */,
 				8695912C1ECAFA8800B8855D /* GiftPackage.swift in Sources */,
+				86EE51E71ECC53E800BC4BFF /* YYServerCommon.swift in Sources */,
 				8695912F1ECAFA8800B8855D /* EmoticonView.swift in Sources */,
 				18CACA1C1DD2CCA4006A328E /* KingfisherExtension.swift in Sources */,
 			);
