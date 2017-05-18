@@ -59,6 +59,10 @@
 		869591391ECAFAA100B8855D /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869591381ECAFAA100B8855D /* NibLoadable.swift */; };
 		8695913C1ECAFD2F00B8855D /* QHNormalEmotionSort.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8695913A1ECAFD2F00B8855D /* QHNormalEmotionSort.plist */; };
 		8695913D1ECAFD2F00B8855D /* QHSohuGifSort.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8695913B1ECAFD2F00B8855D /* QHSohuGifSort.plist */; };
+		86D50E981ECD6ED800DD5523 /* ChatContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D50E901ECD6ED800DD5523 /* ChatContentCell.swift */; };
+		86D50E991ECD6ED800DD5523 /* ChatContentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86D50E911ECD6ED800DD5523 /* ChatContentCell.xib */; };
+		86D50E9A1ECD6ED800DD5523 /* ChatContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D50E921ECD6ED800DD5523 /* ChatContentView.swift */; };
+		86D50E9B1ECD6ED800DD5523 /* ChatContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86D50E931ECD6ED800DD5523 /* ChatContentView.xib */; };
 		86E7F14D1EC1B39200249043 /* Emitterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E7F14C1EC1B39200249043 /* Emitterable.swift */; };
 		86EE51DE1ECC53E800BC4BFF /* Immessage.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EE51D31ECC53E800BC4BFF /* Immessage.proto.swift */; };
 		86EE51E11ECC53E800BC4BFF /* ysocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EE51D71ECC53E800BC4BFF /* ysocket.swift */; };
@@ -124,6 +128,10 @@
 		869591381ECAFAA100B8855D /* NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		8695913A1ECAFD2F00B8855D /* QHNormalEmotionSort.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = QHNormalEmotionSort.plist; sourceTree = "<group>"; };
 		8695913B1ECAFD2F00B8855D /* QHSohuGifSort.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = QHSohuGifSort.plist; sourceTree = "<group>"; };
+		86D50E901ECD6ED800DD5523 /* ChatContentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatContentCell.swift; sourceTree = "<group>"; };
+		86D50E911ECD6ED800DD5523 /* ChatContentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatContentCell.xib; sourceTree = "<group>"; };
+		86D50E921ECD6ED800DD5523 /* ChatContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatContentView.swift; sourceTree = "<group>"; };
+		86D50E931ECD6ED800DD5523 /* ChatContentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatContentView.xib; sourceTree = "<group>"; };
 		86E7F14C1EC1B39200249043 /* Emitterable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emitterable.swift; sourceTree = "<group>"; };
 		86EE51D31ECC53E800BC4BFF /* Immessage.proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Immessage.proto.swift; sourceTree = "<group>"; };
 		86EE51D71ECC53E800BC4BFF /* ysocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ysocket.swift; sourceTree = "<group>"; };
@@ -415,6 +423,7 @@
 		869591181ECAFA8800B8855D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				86D50E8B1ECD6ED800DD5523 /* ChatContentView */,
 				869591191ECAFA8800B8855D /* ChatView */,
 				8695911F1ECAFA8800B8855D /* GiftView */,
 			);
@@ -451,6 +460,17 @@
 				869591261ECAFA8800B8855D /* GiftViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		86D50E8B1ECD6ED800DD5523 /* ChatContentView */ = {
+			isa = PBXGroup;
+			children = (
+				86D50E921ECD6ED800DD5523 /* ChatContentView.swift */,
+				86D50E931ECD6ED800DD5523 /* ChatContentView.xib */,
+				86D50E901ECD6ED800DD5523 /* ChatContentCell.swift */,
+				86D50E911ECD6ED800DD5523 /* ChatContentCell.xib */,
+			);
+			path = ChatContentView;
 			sourceTree = "<group>";
 		};
 		86E7F14B1EC1B38000249043 /* Protocol */ = {
@@ -567,6 +587,7 @@
 			files = (
 				8695912E1ECAFA8800B8855D /* ChatToolsView.xib in Resources */,
 				869591331ECAFA8800B8855D /* GiftListView.xib in Resources */,
+				86D50E991ECD6ED800DD5523 /* ChatContentCell.xib in Resources */,
 				8695913C1ECAFD2F00B8855D /* QHNormalEmotionSort.plist in Resources */,
 				8695913D1ECAFD2F00B8855D /* QHSohuGifSort.plist in Resources */,
 				18CAC9C41DD181B7006A328E /* Rank.storyboard in Resources */,
@@ -574,6 +595,7 @@
 				18CAC9AF1DD180B9006A328E /* LaunchScreen.storyboard in Resources */,
 				18CAC9E41DD2B248006A328E /* types.plist in Resources */,
 				18CACA1A1DD2C964006A328E /* HomeViewCell.xib in Resources */,
+				86D50E9B1ECD6ED800DD5523 /* ChatContentView.xib in Resources */,
 				18CAC9AC1DD180B9006A328E /* Assets.xcassets in Resources */,
 				869591281ECAFA8800B8855D /* RoomViewController.xib in Resources */,
 				18CAC9AA1DD180B9006A328E /* Main.storyboard in Resources */,
@@ -661,6 +683,8 @@
 				18CAC9E61DD2B2A3006A328E /* HomeType.swift in Sources */,
 				86EE51E11ECC53E800BC4BFF /* ysocket.swift in Sources */,
 				86E7F14D1EC1B39200249043 /* Emitterable.swift in Sources */,
+				86D50E9A1ECD6ED800DD5523 /* ChatContentView.swift in Sources */,
+				86D50E981ECD6ED800DD5523 /* ChatContentCell.swift in Sources */,
 				188B88261DD31410007871A4 /* XMGNavigationController.swift in Sources */,
 				86EE51E61ECC53E800BC4BFF /* YYServer.swift in Sources */,
 				86EE51E41ECC53E800BC4BFF /* yudpsocket.c in Sources */,

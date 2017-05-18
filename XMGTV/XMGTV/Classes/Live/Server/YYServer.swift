@@ -124,8 +124,8 @@ extension YYServer {
         // 3.总共的消息
         let totalDta = headerData + typeData + data
         
-        let result = tcpClient.send(data: totalDta)
-        print(result.1)
+        _ = tcpClient.send(data: totalDta)
+        //print(result.1)
     }
     
     // 进入房间

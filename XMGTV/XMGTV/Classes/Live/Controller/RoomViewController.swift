@@ -9,7 +9,8 @@
 import UIKit
 
 private let kChatToolsViewHeight : CGFloat = 44
-private let kGiftlistViewHeight : CGFloat = kScreenH * 0.5
+private let kGiftlistViewHeight : CGFloat = 320
+private let kChatContentViewHeight : CGFloat = 200
 
 class RoomViewController: UIViewController, Emitterable {
     
@@ -18,6 +19,8 @@ class RoomViewController: UIViewController, Emitterable {
     
     fileprivate lazy var chatToolsView : ChatToolsView = ChatToolsView.loadFromNib()
     fileprivate lazy var giftListView : GiftListView = GiftListView.loadFromNib()
+    fileprivate lazy var chatContentView : ChatContentView = ChatContentView.loadFromNib()
+    fileprivate lazy var socket : YYServer = YYServer(address: "192.168.1.110", port: 2123)
     
     // MARK: 系统回调函数
     override func viewDidLoad() {
@@ -26,6 +29,14 @@ class RoomViewController: UIViewController, Emitterable {
         setupUI()
         
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChangeFrame(_:)), name: NSNotification.Name.UIKeyboardWillChangeFrame, object: nil)
+        
+        if socket.connectSercer() {
+            print("连接服务器成功")
+            socket.startReadMessage()
+            socket.sendJoinRoom()
+            socket.delegate = self
+        }
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -36,6 +47,11 @@ class RoomViewController: UIViewController, Emitterable {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         navigationController?.setNavigationBarHidden(false, animated: true)
+    }
+    
+    deinit {
+        socket.sendLeaveRoom()
+        
     }
 }
 
@@ -56,6 +72,12 @@ extension RoomViewController {
     }
     
     fileprivate func setupBottomView() {
+        
+        // 0.设置Chat内容的View
+        chatContentView.frame = CGRect(x: 0, y: view.bounds.height - 44 - kChatContentViewHeight, width: view.bounds.width, height: kChatContentViewHeight)
+        chatContentView.autoresizingMask = [.flexibleWidth, .flexibleTopMargin]
+        view.addSubview(chatContentView)
+        
         // 1.设置chatToolsView
         chatToolsView.frame = CGRect(x: 0, y: view.bounds.height, width: view.bounds.width, height: kChatToolsViewHeight)
         chatToolsView.autoresizingMask = [.flexibleTopMargin, .flexibleWidth]
@@ -94,6 +116,7 @@ extension RoomViewController {
         case 2:
             UIView.animate(withDuration: 0.25, animations: { 
                 self.giftListView.frame.origin.y = kScreenH - kGiftlistViewHeight
+                
             })
         case 3:
             print("点击了更多")
@@ -119,6 +142,9 @@ extension RoomViewController {
             UIView.setAnimationCurve(UIViewAnimationCurve(rawValue: 7)!)
             let endY = inputViewY == (kScreenH - kChatToolsViewHeight) ? kScreenH : inputViewY
             self.chatToolsView.frame.origin.y = endY
+            
+            let contentEndY = inputViewY == (kScreenH - kChatToolsViewHeight) ? (kScreenH - kChatContentViewHeight - 44) : endY - kChatContentViewHeight
+            self.chatContentView.frame.origin.y = contentEndY
         })
     }
 }
@@ -128,10 +154,36 @@ extension RoomViewController {
 // MARK:- 监听用户输入的内容
 extension RoomViewController : ChatToolsViewDelegate, GiftListViewDelegate {
     func chatToolsView(toolView: ChatToolsView, message: String) {
-        print(message)
+        //print(message)
+        socket.sendTextMessage(message: message)
     }
     
     func giftListView(giftView: GiftListView, giftModel: GiftModel) {
-        print(giftModel.subject)
+        //print(giftModel.subject)
+        socket.sendGiftMessage(giftModel.subject, giftModel.img2, 1)
+    }
+}
+
+// MARK:-socket代理
+extension  RoomViewController: YYServerDelegate {
+
+    func server(_ server: YYServer, joinRoom user: User) {
+//        print(user.name + " 进入了房间")
+        chatContentView.insertMsg(user.name + " 进入了房间")
+    }
+    
+    func server(_ server: YYServer, leaveRoom user: User) {
+//        print(user.name + " 离开了房间")
+        chatContentView.insertMsg(user.name + " 离开了房间")
+    }
+    
+    func server(_ server: YYServer, textMessage: TextMessage) {
+//        print(textMessage.user.name + ":" + textMessage.text)
+        chatContentView.insertMsg(textMessage.user.name + ":" + textMessage.text)
+    }
+    
+    func server(_ server: YYServer, giftMessage: GiftMessage) {
+//        print(giftMessage.user.name + "送了礼物" + giftMessage.giftName)
+        chatContentView.insertMsg(giftMessage.user.name + "送了礼物" + giftMessage.giftName)
     }
 }

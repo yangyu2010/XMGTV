@@ -61,7 +61,7 @@ extension GiftListView {
         
         pageCollectionView.dataSource = self
         pageCollectionView.delegate = self
-        pageCollectionView.backgroundColor = .white
+//        pageCollectionView.backgroundColor = .white
         
         pageCollectionView.register(nib: UINib(nibName: "GiftViewCell", bundle: nil), identifier: kGiftCellID)
     }
